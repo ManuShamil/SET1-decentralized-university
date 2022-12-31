@@ -14,7 +14,6 @@ contract University {
 
     constructor() {
         contractOwner = msg.sender;
-        universityCourses.push( Course("MCA", 50000 ) );
     }
 
     function getFees( string memory courseName ) public view returns( uint64 ) {
